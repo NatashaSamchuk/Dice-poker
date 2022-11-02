@@ -1,4 +1,4 @@
-let dice = document.querySelector(".conteiner-dice");
+let dice = document.querySelector(".container-dice");
 
 dice.addEventListener("click", function(e){
     if(e.target.alt == "0"){
