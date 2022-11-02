@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <link href = "style.css" rel = "stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="name">
+        <h1>Покер на костях</h1>
+        <div class="conteiner">
+            <div class="coneiner-table">
+                <table border="2" cellspacing="0" data-table-player="player1">
+                    <thead>
+                        <tr>
+                            <td colspan="2" class="playerName">
+                                Игрок 1
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Комбинация
+                            </td>
+                            <td>
+                                Очки
+                            </td>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td>
+                                Сумма
+                            </td>
+                            <td data-sum = "allSum">
+
+                            </td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr data-player="player1">
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr data-player="player1">
+                            <td>
+                                2
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr data-player="player1">
+                            <td>
+                                3
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr data-player="player1">
+                            <td>
+                                4
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr data-player="player1">
+                            <td>
+                                5
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr data-player="player1">
+                            <td>
+                                6
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tr class="sumSchool">
+                        <td>
+                            Результат по школе
+                        </td>
+                        <td>
+                                
+                        </td>
+                    </tr>
+                    <tbody>
+                        <tr data-player="player1" data-type-combination="pair" data-player1="notschool">
+                            <td>
+                                Пара
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr data-player="player1" data-type-combination="pair2" data-player1="notschool">
+                            <td>
+                                2 пары
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr data-player="player1"data-type-combination="triangle" data-player1="notschool">
+                            <td>
+                                Тройка
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr data-player="player1" data-type-combination="quadrilateral" data-player1="notschool">
+                            <td>
+                                Каре
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr data-player="player1" data-type-combination="poker" data-player1="notschool">
+                            <td>
+                                Покер
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr data-player="player1" data-type-combination="threeTwo" data-player1="notschool">
+                            <td>
+                                3+2
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr data-player="player1" data-type-combination="even" data-player1="notschool">
+                            <td>
+                                Чет
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr data-player="player1" data-type-combination="odd" data-player1="notschool">
+                            <td>
+                                Нечет
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr data-player="player1" data-type-combination="bigStreet" data-player1="notschool">
+                            <td>
+                                Большой стрит
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr data-player="player1" data-type-combination="littleStreet" data-player1="notschool">
+                            <td>
+                                Малый стрит
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr data-player="player1" data-type-combination="chance" data-player1="notschool">
+                            <td>
+                                Шанс
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="conteiner-dice">
+                <h2>Игрок 1</h2>
+                <div class="dice first-row">
+                    <img src="img/dado-1.svg" alt="0">
+                    <img src="img/dado-2.svg" alt="0">
+                    <img src="img/dado-3.svg" alt="0">
+<!--                </div>-->
+<!--                <div class="dice second-row">-->
+                    <img src="img/dado-4.svg" alt="0">
+                    <img src="img/dado-5.svg" alt="0">
+                </div>
+                <div class="button">
+                    <button id="cast">Бросить кости</button>
+                    <button id="record">Записать результат</button>
+                </div>
+            </div>
+            <div class="coneiner-table">
+                <table border="2" cellspacing="0" data-table-player="player2">
+                    <thead>
+                        <tr>
+                            <td colspan="2" class="playerName">
+                                Игрок 2
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Комбинация
+                            </td>
+                            <td>
+                                Очки
+                            </td>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td>
+                                Сумма
+                            </td>
+                            <td data-sum = "allSum">
+
+                            </td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr data-player="player2">
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr data-player="player2">
+                            <td>
+                                2
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr data-player="player2">
+                            <td>
+                                3
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr data-player="player2">
+                            <td>
+                                4
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr data-player="player2">
+                            <td>
+                                5
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr data-player="player2">
+                            <td>
+                                6
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tr class="sumSchool">
+                        <td>
+                            Результат по школе
+                        </td>
+                        <td>
+                                
+                        </td>
+                    </tr>
+                    <tbody>
+                        <tr data-player="player2" data-type-combination="pair" data-player2="notschool">
+                            <td>
+                                Пара
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr data-player="player2" data-type-combination="pair2" data-player2="notschool">
+                            <td>
+                                2 пары
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr data-player="player2"data-type-combination="triangle" data-player2="notschool">
+                            <td>
+                                Тройка
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr data-player="player2" data-type-combination="quadrilateral" data-player2="notschool">
+                            <td>
+                                Каре
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr data-player="player2" data-type-combination="poker" data-player2="notschool">
+                            <td>
+                                Покер
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr data-player="player2" data-type-combination="threeTwo" data-player2="notschool">
+                            <td>
+                                3+2
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr data-player="player2" data-type-combination="even" data-player2="notschool">
+                            <td>
+                                Чет
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr data-player="player2" data-type-combination="odd" data-player2="notschool">
+                            <td>
+                                Нечет
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr data-player="player2" data-type-combination="bigStreet" data-player2="notschool">
+                            <td>
+                                Большой стрит
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr data-player="player2" data-type-combination="littleStreet" data-player2="notschool">
+                            <td>
+                                Малый стрит
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr data-player="player2" data-type-combination="chance" data-player2="notschool">
+                            <td>
+                                Шанс
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src = "js.js"></script>
+</body>
+</html>

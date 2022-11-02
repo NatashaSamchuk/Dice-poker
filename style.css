@@ -1,0 +1,127 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.name{
+    background-image: url("img/bg1.jpg");
+    text-align: center;
+    min-height: 100vh;
+}
+h1{
+    margin: 0;
+    padding: 0.8% 0 0;
+    font-size: calc(24px + 16 * (100vw / 1280));
+    height: 60px;
+    display: block;
+    color: blue;
+    text-shadow: 2px 2px 4px rgb(90, 90, 253);
+}
+h2{
+    margin: 0;
+    padding: 4% 0;
+    font-size: calc(20px + 12 * (100vw / 1280));
+    display: block;
+    color: blue;
+    text-shadow: 2px 2px 4px rgb(90, 90, 253);
+}
+td{
+    text-align: left;
+    font-size: calc(16px + 0.55vw);
+}
+thead, tfoot{
+    font-weight: bold;
+}
+.coneiner-table{
+    border: solid 1px black;
+    min-height: calc(100vh - 60px);
+    /*background-color: #e5e5e5;*/
+    background-color: #cfecff;
+    padding: 0 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 7px #b9b9b9;
+    margin-bottom: 10px;
+}
+table{
+    width: 100%;
+}
+.conteiner{
+    display: grid;
+    grid-template-columns: minmax(300px, 24%) 1fr minmax(350px, 24%);
+}
+.dice{
+    width: 100%;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    margin-top: 20px;
+    /*display: grid;*/
+    /*grid-template-columns: repeat(auto-fill, 180px);*/
+}
+.conteiner-dice{
+    min-width: 680px;
+    width: 90%;
+    justify-self: center;
+}
+.first-row{
+    padding: 0 7%;
+}
+.second-row{
+    padding: 0 18%;
+}
+.playerName{
+    color: rgb(38, 28, 182);
+    font-size: 25px;
+    text-align: center;
+    padding: 12px 0;
+}
+.sumSchool{
+    font-weight: bold;
+}
+.first-row img{
+    width: 160px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0 15px;
+}
+.second-row img{
+    width: 160px;
+    box-sizing: border-box;
+}
+.button{
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    border-radius: 50px;
+    border: none;
+    padding: 2%;
+    margin-top: 10%;
+    background-color: rgb(150, 150, 253);
+    font-size: calc(14px + 0.55vw);
+}
+.select{
+    background-color: lightyellow;
+}
+.combination{
+    background-color: lightgreen;
+}
+tr{
+    padding: 0 3px;
+}
+
+@media (max-width: 1330px) {
+    .first-row img{
+        width: 120px;
+    }
+    .conteiner-dice{
+        min-width: 540px;
+        width: 100%;
+    }
+    .conteiner{
+        display: grid;
+        grid-template-columns: minmax(250px, 24%) 1fr minmax(250px, 24%);
+    }
+}
