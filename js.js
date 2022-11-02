@@ -92,14 +92,27 @@ document.querySelector("#record").addEventListener("click", addPoints);
 let i = 0;
 
 function examinationI(i){
-    console.log(table1.querySelector("[data-sum = 'allSum']").textContent)
+    let p1 = table1.querySelector("[data-sum = 'allSum']").textContent;
+    let p2 = table2.querySelector("[data-sum = 'allSum']").textContent;
+    let v = document.querySelector(".vinner");
     if(i == 34){
-        if(table1.querySelector("[data-sum = 'allSum']").textContent > table2.querySelector("[data-sum = 'allSum']").textContent){
-            alert("победил игрок1")
-        }else if(table1.querySelector("[data-sum = 'allSum']").textContent < table2.querySelector("[data-sum = 'allSum']").textContent){
-            alert("победил игрок2")
+        if(p1<0 && p2<0){
+            if(p1 > p2){
+                v.textContent = "Победил игрок2!";
+                v.style.display = "block";
+            }else if(p1 < p2){
+                v.textContent = "Победил игрок1!";
+                v.style.display = "block";
+            }
+        }else if(p1 > p2){
+           v.textContent = "Победил игрок1!";
+           v.style.display = "block";
+        }else if(p1 < p2){
+            v.textContent = "Победил игрок2!";
+            v.style.display = "block";
         }else{
-            alert("ничья")
+            v.textContent = "Ничья";
+            v.style.display = "block";
         }
     }
 }
